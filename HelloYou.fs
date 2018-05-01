@@ -13,8 +13,6 @@ module HelloYou =
         LastName: string
     }
 
-    exception InvalidInputException of string
-
     let run (req: HttpRequest) (log: TraceWriter) =
         log.Info "[Enter] HelloYou.run"
         async {
